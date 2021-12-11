@@ -8,9 +8,9 @@ import logging
 
 # the secret configuration specific things
 if bool(os.environ.get("ENV", False)):
-    from tobrot.sample_config import Config
+    from sample_config import Config
 else:
-    from tobrot.config import Config
+    from config import Config
 
 from logging.handlers import RotatingFileHandler
 
