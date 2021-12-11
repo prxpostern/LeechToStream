@@ -1,15 +1,15 @@
 import os
 
 class Config(object):
-    # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-    # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
-    OWNER_ID = int(os.environ.get("OWNER_ID", 12345))
+    # get a token from @BotFather TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = "2023175667:AAE3kJW4sfeGoymWUjNnZHgm95SVpz7vKNo"
+    # The Telegram API things APP_ID = int(os.environ.get("APP_ID", 12345)) API_HASH = os.environ.get("API_HASH") OWNER_ID = int(os.environ.get("OWNER_ID", 12345))
+    APP_ID = 7513175
+    API_HASH = "c0601a8e7ca81691231fb46767fdc1b7"
+    OWNER_ID = 742920327
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
+    AUTH_CHANNEL = set(int(x) for x in "742920327 -1001485315506".split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
@@ -38,9 +38,17 @@ class Config(object):
     LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
     YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
     PYTDL_COMMAND = os.environ.get("PYTDL_COMMAND", "pytdl")
-    RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
+    #RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
+    RCLONE_CONFIG = """
+        type = drive
+        scope = drive
+        root_folder_id = 1OvqOeA4GBmd2siJnlIzdmCJPbukCYiGN
+        token = {"access_token":"ya29.a0ARrdaM-IuYfNrLO_a0oi1GX5N1ix9aEQoPswaSNhx5An2X4rclRj8Uyk6IRaZfqj3vbWX7OC4M3cau4i0vFSKo2B4LA19EqFiYzD1CGekDvDcO56P5M4L0CFvrgukHwFf0mmcMFxfm7ohzuCy2KEmmjli3BWJw","token_type":"Bearer","refresh_token":"1//03V7lSoUrYfg6CgYIARAAGAMSNwF-L9Irk7Bfgg8iu7FsZcslReVluucV900vbgFyL8iT8Q0qqC3gtbncafBB2ZSoYfjxyTD6hD8","expiry":"2021-11-01T08:48:39.884954738Z"}
+        team_drive = 0AHULFtC6nOrpUk9PVA
+    """    
     DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "TorrentLeech-Gdrive")
-    INDEX_LINK = os.environ.get("INDEX_LINK", "")
+    #INDEX_LINK = os.environ.get("INDEX_LINK", "")
+    INDEX_LINK = "https://pdrive.fr-postern-001.workers.dev"
     CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
     GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
     STATUS_COMMAND = os.environ.get("STATUS_COMMAND", "status")
