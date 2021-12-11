@@ -2,14 +2,14 @@ import os
 
 class Config(object):
     # get a token from @BotFather TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-    TG_BOT_TOKEN = "2023175667:AAE3kJW4sfeGoymWUjNnZHgm95SVpz7vKNo"
+    TG_BOT_TOKEN = "2034104557:AAFNVSQIsCcLa1LlUwmjwuQQ6oUYwDgwLU0"
     # The Telegram API things APP_ID = int(os.environ.get("APP_ID", 12345)) API_HASH = os.environ.get("API_HASH") OWNER_ID = int(os.environ.get("OWNER_ID", 12345))
     APP_ID = 7513175
     API_HASH = "c0601a8e7ca81691231fb46767fdc1b7"
     OWNER_ID = 742920327
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = set(int(x) for x in "742920327 -1001485315506".split())
+    AUTH_CHANNEL = set(int(x) for x in "742920327 108735187".split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
@@ -55,4 +55,4 @@ class Config(object):
     SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail")
     CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail")
     CLEAR_UNDELETED = os.environ.get("CLEAR_UNDELETED", "clearall")
-    LOG_COMMAND = os.environ.get("LOG_COMMAND", "getlog") 
+    LOG_COMMAND = os.environ.get("LOG_COMMAND", "getlog")
